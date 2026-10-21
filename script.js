@@ -234,7 +234,7 @@ const whatsappLink = document.getElementById("whatsappLink");
 // UK example format: 447XXXXXXXXX
 // Include country code; remove +, spaces and brackets.
 
-const whatsappNumber = "447780583401";
+const whatsappNumber = "+447780583401";
 
 const whatsappMessage =
   "Hi JAY studio UK! I'm interested in booking a photography session. Could you please share your packages and availability?";
