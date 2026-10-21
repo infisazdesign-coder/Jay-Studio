@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JAY studio UK — Professional photography in Glasgow and across Scotland. Weddings, portraits, events, engagements and landscapes.">
+  <title>JAY studio UK | Photography & Stories</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <a href="#home" class="logo">
+      JAY <span>studio UK</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="nav-contact">Let's Talk ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">PHOTOGRAPHY · GLASGOW · SCOTLAND</p>
+        <h1>Moments pass.<br><em>Stories remain.</em></h1>
+        <p class="hero-description">
+          Capturing the people, places and moments that
+          make your story unforgettable.
+        </p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="button button-light">Explore my work ↗</a>
+          <a href="#contact" class="button button-outline">Book a session</a>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>AUTHENTIC MOMENTS. TIMELESS IMAGES.</span>
+        <a href="#portfolio">SCROLL TO EXPLORE ↓</a>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro section-padding">
+      <p class="eyebrow">BEHIND THE LENS</p>
+      <h2>Not just photographs.<br>
+        <em>Memories to keep.</em>
+      </h2>
+      <p class="intro-text">
+        From once-in-a-lifetime celebrations to quiet moments
+        in the Scottish landscape, I create photographs that
+        bring you back to how it all felt.
+      </p>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio section-padding" id="portfolio">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A COLLECTION OF STORIES</p>
+          <h2>Selected <em>work</em></h2>
+        </div>
+        <p class="heading-note">Every frame has a story to tell.</p>
+      </div>
+
+      <div class="filters" aria-label="Filter portfolio">
+        <button class="filter active" data-filter="all">All work</button>
+        <button class="filter" data-filter="weddings">Weddings</button>
+        <button class="filter" data-filter="portraits">Portraits</button>
+        <button class="filter" data-filter="events">Events</button>
+        <button class="filter" data-filter="landscapes">Landscapes</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <a class="portfolio-item large" data-category="weddings"
+          href="#contact">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85"
+            alt="Wedding celebration and romantic details" loading="lazy">
+          <div class="portfolio-caption">
+            <span>01 / WEDDINGS</span>
+            <h3>Forever begins here</h3>
+          </div>
+        </a>
+
+        <a class="portfolio-item" data-category="portraits"
+          href="#contact">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85"
+            alt="Natural light portrait photography" loading="lazy">
+          <div class="portfolio-caption">
+            <span>02 / PORTRAITS</span>
+            <h3>Simply you</h3>
+          </div>
+        </a>
+
+        <a class="portfolio-item" data-category="events"
+          href="#contact">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85"
+            alt="Elegant event celebration" loading="lazy">
+          <div class="portfolio-caption">
+            <span>03 / EVENTS</span>
+            <h3>Made to celebrate</h3>
+          </div>
+        </a>
+
+        <a class="portfolio-item" data-category="landscapes"
+          href="#contact">
+          <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=85"
+            alt="Atmospheric landscape and nature photography" loading="lazy">
+          <div class="portfolio-caption">
+            <span>04 / LANDSCAPES</span>
+            <h3>Into the wild</h3>
+          </div>
+        </a>
+
+        <a class="portfolio-item large" data-category="weddings"
+          href="#contact">
+          <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1200&q=85"
+            alt="Couple celebrating their wedding day" loading="lazy">
+          <div class="portfolio-caption">
+            <span>05 / COUPLES</span>
+            <h3>Your kind of forever</h3>
+          </div>
+        </a>
+
+        <a class="portfolio-item" data-category="portraits"
+          href="#contact">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85"
+            alt="Creative portrait photography" loading="lazy">
+          <div class="portfolio-caption">
+            <span>06 / CREATIVE</span>
+            <h3>Beyond the ordinary</h3>
+          </div>
+        </a>
+      </div>
+
+      <p class="portfolio-note">
+        Portfolio images are temporary examples. Replace them with your own photographs before publishing.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section class="about section-padding" id="about">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1000&q=85"
+          alt="Camera and photography equipment" loading="lazy">
+        <span class="image-label">BEHIND EVERY FRAME</span>
+      </div>
+
+      <div class="about-content">
+        <p class="eyebrow">THE PERSON BEHIND THE CAMERA</p>
+        <h2>Seeing the world<br>through a <em>different lens.</em></h2>
+        <p>
+          Welcome to JAY studio UK. I'm a photographer passionate
+          about real emotions, beautiful light and meaningful stories.
+        </p>
+        <p>
+          My approach is simple: capture the moments as they happen,
+          notice the details others might miss, and create images
+          that feel just as special years from now.
+        </p>
+        <p>
+          Based in Glasgow, available for photography across Scotland.
+        </p>
+        <a href="#contact" class="text-link">LET'S CREATE SOMETHING ↗</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section-padding" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHAT I PHOTOGRAPH</p>
+          <h2>Made for your <em>moments.</em></h2>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <a href="#contact" class="service-card">
+          <span>01</span>
+          <h3>Weddings & Engagements</h3>
+          <p>Love stories, pre-wedding shoots and the moments in between.</p>
+          <b>ENQUIRE ↗</b>
+        </a>
+
+        <a href="#contact" class="service-card">
+          <span>02</span>
+          <h3>Portraits & Families</h3>
+          <p>Natural portraits, family sessions and personal milestones.</p>
+          <b>ENQUIRE ↗</b>
+        </a>
+
+        <a href="#contact" class="service-card">
+          <span>03</span>
+          <h3>Events & Celebrations</h3>
+          <p>Birthdays, cultural events, parties and corporate occasions.</p>
+          <b>ENQUIRE ↗</b>
+        </a>
+
+        <a href="#contact" class="service-card">
+          <span>04</span>
+          <h3>Landscape & Travel</h3>
+          <p>Scottish scenery, dramatic light and the beauty of the outdoors.</p>
+          <b>EXPLORE ↗</b>
+        </a>
+
+        <a href="#contact" class="service-card">
+          <span>05</span>
+          <h3>Brand & Commercial</h3>
+          <p>Creative imagery for businesses, products and personal brands.</p>
+          <b>ENQUIRE ↗</b>
+        </a>
+
+        <a href="#contact" class="service-card">
+          <span>06</span>
+          <h3>Graduations & Special Days</h3>
+          <p>Celebrate achievements with individual and group portraits.</p>
+          <b>ENQUIRE ↗</b>
+        </a>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section">
+      <div class="quote-overlay"></div>
+      <div class="quote-content">
+        <p class="eyebrow">A LITTLE REMINDER</p>
+        <h2>"The best photographs<br>make you <em>feel something.</em>"</h2>
+        <span>JAY STUDIO UK</span>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section-padding" id="contact">
+      <p class="eyebrow">HAVE A STORY IN MIND?</p>
+      <h2>Let's make it <em>lasting.</em></h2>
+      <p class="contact-description">
+        Tell me what you're planning, and let's create something
+        worth remembering.
+      </p>
+
+      <div class="contact-actions">
+        <!-- Replace the number in script.js with your WhatsApp number -->
+        <a href="#" id="whatsappLink" class="button button-light">
+          Enquire on WhatsApp ↗
+        </a>
+        <a href="https://www.instagram.com/" target="_blank"
+          rel="noopener noreferrer" class="button button-outline">
+          Instagram ↗
+        </a>
+      </div>
+
+      <p class="contact-location">BASED IN GLASGOW · AVAILABLE ACROSS SCOTLAND</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#home" class="logo">JAY <span>studio UK</span></a>
+    <p>Capture your moments. Keep your stories.</p>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> JAY studio UK. All rights reserved.</span>
+      <a href="#home">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
