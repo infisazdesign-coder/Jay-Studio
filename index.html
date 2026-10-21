@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#151512">
   <meta name="description" content="JAY studio UK — Professional photography in Glasgow and across Scotland. Weddings, portraits, events, engagements and landscapes.">
+
   <title>JAY studio UK | Photography & Stories</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,17 +14,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Navigation -->
   <header class="header" id="header">
-    <a href="#home" class="logo">
-      JAY <span>studio UK</span>
-    </a>
+    <a href="#home" class="logo">JAY <span>studio UK</span></a>
 
     <button class="menu-toggle" id="menuToggle"
-      aria-label="Open navigation" aria-expanded="false">
+      aria-label="Open navigation" aria-expanded="false" aria-controls="nav">
       <span></span><span></span>
     </button>
 
@@ -36,7 +36,7 @@
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- HERO -->
     <section class="hero" id="home">
       <div class="hero-image"></div>
       <div class="hero-overlay"></div>
@@ -48,6 +48,7 @@
           Capturing the people, places and moments that
           make your story unforgettable.
         </p>
+
         <div class="hero-buttons">
           <a href="#portfolio" class="button button-light">Explore my work ↗</a>
           <a href="#contact" class="button button-outline">Book a session</a>
@@ -60,12 +61,10 @@
       </div>
     </section>
 
-    <!-- Intro -->
+    <!-- INTRO -->
     <section class="intro section-padding">
       <p class="eyebrow">BEHIND THE LENS</p>
-      <h2>Not just photographs.<br>
-        <em>Memories to keep.</em>
-      </h2>
+      <h2>Not just photographs.<br><em>Memories to keep.</em></h2>
       <p class="intro-text">
         From once-in-a-lifetime celebrations to quiet moments
         in the Scottish landscape, I create photographs that
@@ -73,7 +72,7 @@
       </p>
     </section>
 
-    <!-- Portfolio -->
+    <!-- PORTFOLIO -->
     <section class="portfolio section-padding" id="portfolio">
       <div class="section-heading">
         <div>
@@ -84,123 +83,166 @@
       </div>
 
       <div class="filters" aria-label="Filter portfolio">
-        <button class="filter active" data-filter="all">All work</button>
-        <button class="filter" data-filter="weddings">Weddings</button>
-        <button class="filter" data-filter="portraits">Portraits</button>
-        <button class="filter" data-filter="events">Events</button>
-        <button class="filter" data-filter="landscapes">Landscapes</button>
+        <button class="filter active" data-filter="all" aria-pressed="true">All work</button>
+        <button class="filter" data-filter="weddings" aria-pressed="false">Weddings</button>
+        <button class="filter" data-filter="portraits" aria-pressed="false">Portraits</button>
+        <button class="filter" data-filter="events" aria-pressed="false">Events</button>
+        <button class="filter" data-filter="landscapes" aria-pressed="false">Landscapes</button>
       </div>
 
       <div class="portfolio-grid">
-        <a class="portfolio-item large" data-category="weddings"
-          href="#contact">
-          <img src="IMG_4276.jpeg?auto=format&fit=crop&w=900&q=85"
-            alt="Wedding celebration and romantic details" loading="lazy">
+
+        <a class="portfolio-item item-tall" data-category="weddings"
+          href="IMG_4276.jpeg" aria-label="View wedding photograph">
+          <img src="IMG_4276.jpeg" alt="Wedding photography" loading="lazy">
           <div class="portfolio-caption">
             <span>01 / WEDDINGS</span>
             <h3>Forever begins here</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
-             <div class="portfolio-grid">
-        <a class="portfolio-item large" data-category="weddings"
-          href="#contact">
-          <img src="IMG_4290.jpeg?auto=format&fit=crop&w=900&q=85"
-            alt="Wedding celebration and romantic details" loading="lazy">
+
+        <a class="portfolio-item" data-category="weddings"
+          href="IMG_4290.jpeg" aria-label="View wedding photograph">
+          <img src="IMG_4290.jpeg" alt="Wedding celebration" loading="lazy">
           <div class="portfolio-caption">
             <span>01 / WEDDINGS</span>
-            <h3>Forever begins here</h3>
+            <h3>Beautiful beginnings</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
-                    <div class="portfolio-grid">
-        <a class="portfolio-item large" data-category="weddings"
-          href="#contact">
-          <img src="IMG_4351.jpeg?auto=format&fit=crop&w=900&q=85"
-            alt="Wedding celebration and romantic details" loading="lazy">
+
+        <a class="portfolio-item item-wide" data-category="weddings"
+          href="IMG_4351.jpeg" aria-label="View wedding photograph">
+          <img src="IMG_4351.jpeg" alt="Wedding moments and details" loading="lazy">
           <div class="portfolio-caption">
             <span>01 / WEDDINGS</span>
-            <h3>Forever begins here</h3>
+            <h3>Every moment, remembered</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
 
         <a class="portfolio-item" data-category="portraits"
-          href="#contact">
-          <img src="IMG_0872.jpeg?auto=format&fit=crop&w=900&q=85"
-            alt="Natural light portrait photography" loading="lazy">
+          href="IMG_9168.jpeg" aria-label="View portrait photograph">
+          <img src="IMG_9168.jpeg" alt="Portrait photography" loading="lazy">
           <div class="portfolio-caption">
             <span>02 / PORTRAITS</span>
             <h3>Simply you</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
-                      <a class="portfolio-item" data-category="portraits"
-          href="#contact">
-          <img src="IMG_0872.jpeg?auto=format&fit=crop&w=900&q=85"
-            alt="Natural light portrait photography" loading="lazy">
+
+        <a class="portfolio-item item-tall" data-category="portraits"
+          href="IMG_9181.jpeg" aria-label="View portrait photograph">
+          <img src="IMG_9181.jpeg" alt="Natural portrait photography" loading="lazy">
           <div class="portfolio-caption">
             <span>02 / PORTRAITS</span>
-            <h3>Simply you</h3>
+            <h3>In your element</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
-                      <a class="portfolio-item" data-category="portraits"
-          href="#contact">
-          <img src="IMG_0872.jpeg?auto=format&fit=crop&w=900&q=85"
-            alt="Natural light portrait photography" loading="lazy">
+
+        <a class="portfolio-item" data-category="portraits"
+          href="IMG_9168.jpeg" aria-label="View portrait photograph">
+          <img src="IMG_9168.jpeg" alt="Portrait in natural light" loading="lazy">
           <div class="portfolio-caption">
             <span>02 / PORTRAITS</span>
-            <h3>Simply you</h3>
+            <h3>Little details</h3>
+            <span class="view-mark">↗</span>
+          </div>
+        </a>
+
+        <a class="portfolio-item item-wide" data-category="portraits"
+          href="IMG_9183.jpeg" aria-label="View portrait photograph">
+          <img src="IMG_9183.jpeg" alt="Creative portrait photography" loading="lazy">
+          <div class="portfolio-caption">
+            <span>02 / PORTRAITS</span>
+            <h3>Unscripted moments</h3>
+            <span class="view-mark">↗</span>
+          </div>
+        </a>
+
+        <a class="portfolio-item" data-category="portraits"
+          href="IMG_0872.jpeg" aria-label="View portrait photograph">
+          <img src="IMG_0872.jpeg" alt="Portrait session" loading="lazy">
+          <div class="portfolio-caption">
+            <span>02 / PORTRAITS</span>
+            <h3>A story of your own</h3>
+            <span class="view-mark">↗</span>
+          </div>
+        </a>
+
+        <a class="portfolio-item item-tall" data-category="events"
+          href="IMG_8944.jpeg" aria-label="View event photograph">
+          <img src="IMG_8944.jpeg" alt="Event celebration photography" loading="lazy">
+          <div class="portfolio-caption">
+            <span>03 / EVENTS</span>
+            <h3>Made to celebrate</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
 
         <a class="portfolio-item" data-category="events"
-          href="#contact">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85"
-            alt="Elegant event celebration" loading="lazy">
+          href="IMG_0790.jpeg" aria-label="View event photograph">
+          <img src="IMG_0790.jpeg" alt="Celebration and event photography" loading="lazy">
           <div class="portfolio-caption">
             <span>03 / EVENTS</span>
-            <h3>Made to celebrate</h3>
+            <h3>The joy of togetherness</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
 
-        <a class="portfolio-item" data-category="landscapes"
-          href="#contact">
-          <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=85"
-            alt="Atmospheric landscape and nature photography" loading="lazy">
+        <a class="portfolio-item item-wide" data-category="events"
+          href="IMG_3155.jpeg" aria-label="View event photograph">
+          <img src="IMG_3155.jpeg" alt="Event moments" loading="lazy">
+          <div class="portfolio-caption">
+            <span>03 / EVENTS</span>
+            <h3>Nights worth remembering</h3>
+            <span class="view-mark">↗</span>
+          </div>
+        </a>
+
+        <a class="portfolio-item item-tall" data-category="landscapes"
+          href="IMG_9592.jpeg" aria-label="View landscape photograph">
+          <img src="IMG_9592.jpeg" alt="Scottish landscape photography" loading="lazy">
           <div class="portfolio-caption">
             <span>04 / LANDSCAPES</span>
             <h3>Into the wild</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
 
-        <a class="portfolio-item large" data-category="weddings"
-          href="#contact">
-          <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1200&q=85"
-            alt="Couple celebrating their wedding day" loading="lazy">
+        <a class="portfolio-item item-wide" data-category="weddings"
+          href="IMG_9592.jpeg" aria-label="View couple photograph">
+          <img src="IMG_9592.jpeg" alt="Couple photography" loading="lazy">
           <div class="portfolio-caption">
             <span>05 / COUPLES</span>
             <h3>Your kind of forever</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
 
         <a class="portfolio-item" data-category="portraits"
-          href="#contact">
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85"
-            alt="Creative portrait photography" loading="lazy">
+          href="IMG_9711.jpeg" aria-label="View creative portrait">
+          <img src="IMG_9711.jpeg" alt="Creative portrait photography" loading="lazy">
           <div class="portfolio-caption">
             <span>06 / CREATIVE</span>
             <h3>Beyond the ordinary</h3>
+            <span class="view-mark">↗</span>
           </div>
         </a>
+
       </div>
 
       <p class="portfolio-note">
-        Portfolio images are temporary examples. Replace them with your own photographs before publishing.
+        A selection of work by JAY studio UK. Select any photograph to view it in detail.
       </p>
     </section>
 
-    <!-- About -->
+    <!-- ABOUT -->
     <section class="about section-padding" id="about">
       <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1000&q=85"
-          alt="Camera and photography equipment" loading="lazy">
+        <img src="IMG_0758.jpeg" alt="Behind the scenes at JAY studio UK" loading="lazy">
         <span class="image-label">BEHIND EVERY FRAME</span>
       </div>
 
@@ -216,14 +258,12 @@
           notice the details others might miss, and create images
           that feel just as special years from now.
         </p>
-        <p>
-          Based in Glasgow, available for photography across Scotland.
-        </p>
+        <p>Based in Glasgow, available for photography across Scotland.</p>
         <a href="#contact" class="text-link">LET'S CREATE SOMETHING ↗</a>
       </div>
     </section>
 
-    <!-- Services -->
+    <!-- SERVICES -->
     <section class="services section-padding" id="services">
       <div class="section-heading">
         <div>
@@ -277,7 +317,7 @@
       </div>
     </section>
 
-    <!-- Quote -->
+    <!-- QUOTE -->
     <section class="quote-section">
       <div class="quote-overlay"></div>
       <div class="quote-content">
@@ -287,7 +327,7 @@
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section class="contact section-padding" id="contact">
       <p class="eyebrow">HAVE A STORY IN MIND?</p>
       <h2>Let's make it <em>lasting.</em></h2>
@@ -297,12 +337,12 @@
       </p>
 
       <div class="contact-actions">
-        <!-- Replace the number in script.js with your WhatsApp number -->
         <a href="#" id="whatsappLink" class="button button-light">
           Enquire on WhatsApp ↗
         </a>
-        <a href="https://www.instagram.com/" target="_blank"
-          rel="noopener noreferrer" class="button button-outline">
+        <a href="https://www.instagram.com/jay_studiouk/"
+          target="_blank" rel="noopener noreferrer"
+          class="button button-outline">
           Instagram ↗
         </a>
       </div>
@@ -311,7 +351,7 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
     <a href="#home" class="logo">JAY <span>studio UK</span></a>
     <p>Capture your moments. Keep your stories.</p>
@@ -321,6 +361,25 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- FULL-SCREEN PHOTO VIEWER -->
+  <div class="lightbox" id="lightbox" role="dialog"
+    aria-modal="true" aria-label="Photograph viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose"
+      aria-label="Close photograph viewer">×</button>
+
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev"
+      aria-label="Previous photograph">‹</button>
+
+    <figure class="lightbox-figure">
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+
+    <button class="lightbox-nav lightbox-next" id="lightboxNext"
+      aria-label="Next photograph">›</button>
+
+    <span class="lightbox-count" id="lightboxCount"></span>
+  </div>
+
 </body>
 </html>
